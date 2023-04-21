@@ -289,10 +289,11 @@ MonoBehaviour:
   _tileContainer: {fileID: 1945124567}
   _preFab: {fileID: 3141812464646805582, guid: bf62e145d40a9b340b9292c290b988fb, type: 3}
   _gridSize: 1
-  _layout: 1
-  _size: 2
-  _neighbourIndex: 0
-  _shape: 1
+  _orientation: 1
+  _size: 7
+  _fadeTime: 0.5
+  _shape: 0
+  _refresh: 0
 --- !u!1 &1706033036
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706033036}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
