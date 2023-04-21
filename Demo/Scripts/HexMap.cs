@@ -21,7 +21,7 @@ namespace Hexagons.Demo
         [SerializeField, Range(1, 10)]
         private int _size;
 
-        [SerializeField]
+        [SerializeField, Range(.25f, 2)]
         private float _fadeTime = .5f;
 
         [SerializeField]
@@ -92,6 +92,14 @@ namespace Hexagons.Demo
                     OnMouseTileChange?.Invoke(_mouseHex);
                 }
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            _hexTool.ToWorld(_mouseHex, out float x, out float z);
+            var p = new Vector3(x, 0, z);
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(p, .25f);
         }
     }
 }
